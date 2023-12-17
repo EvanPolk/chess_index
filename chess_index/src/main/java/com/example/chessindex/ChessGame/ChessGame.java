@@ -27,15 +27,13 @@ public class ChessGame {
 
     }
 
-    public ChessGame(Long id, String player, Double outcome, String PNG) {
-        this.id = id;
+    public ChessGame(String player, Double outcome, String PNG) {
         this.player = player;
         this.PNG = PNG;
         this.outcome = outcome;
     }
 
-    public ChessGame(Long id, String player, Double outcome, LocalDate datePlayed, String PNG) {
-        this.id = id;
+    public ChessGame(String player, Double outcome, LocalDate datePlayed, String PNG) {
         this.player = player;
         this.outcome = outcome;
         this.datePlayed = datePlayed;
