@@ -10,7 +10,7 @@ import java.time.LocalDate;
 import java.util.List;
 
 @RestController
-@RequestMapping(path="api/ChessGame")
+@RequestMapping(path="api/v1/ChessGame")
 public class ChessGameController {
     private final ChessGameService chessGameService;
 
