@@ -65,25 +65,11 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-* Run a PostgreSQL server hosting a database named chessgame
+* Navigate to the docker folder in /src/
   ```sh
-  psql -h localhost -p 5432 -U ExampleUser -d chessgame
+  docker-compose up
   ```
-* If you get an error, try editing the application.properties to include your specific credentials at <br>
-chess_index/chess_index/src/main/resources/application.properties
-  ```sh
-  spring.datasource.username=postgres
-  spring.datasource.password=postgres
-  ```
-
-### Installation
-
-1. Once your psql server is running, navigate to chess_index/chess_index/target/
-2. Run this command to create a instance of the Jar
-```sh
-java -jar chess-index-0.0.1-SNAPSHOT.jar
-```
-3. Navigate to localhost:8080/api/v1/ChessGame, and you're done!
+* After this the container should run with no issues, this also includes the psql database.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
