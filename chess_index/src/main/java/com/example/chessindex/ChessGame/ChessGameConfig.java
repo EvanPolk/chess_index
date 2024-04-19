@@ -16,7 +16,7 @@ public class ChessGameConfig {
         return args -> {
             ChessGame yugoslavGame = new ChessGame(
                     "Bobby Fischer",
-                    "Boris V Spassky",
+                    "Spassky",
                     "1-0",
                     50,
                     LocalDate.of(1992, Month.JANUARY, 1),
